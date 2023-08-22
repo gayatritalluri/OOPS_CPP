@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>            //22A91A05G6 --> AEC--> CSE
 using namespace std;
 class Triangle{
 	private:
@@ -9,12 +9,17 @@ class Triangle{
 			this->breadth=b;
 			this->height=y;
 		}
+		void modify(){
+			breadth=5;
+			height=2;
+		}
 		int Tri(){
 		  return (breadth*height)/2;
 		} 
 };
 int main(){
 	Triangle t1(6,3);
+	t1.modify();
 	cout<<t1.Tri();
 	return 0;
 }
